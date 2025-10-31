@@ -4,7 +4,7 @@ This is a CMPM 121 activity for practicing refactoring. I went through the code 
 
 ## What I Found
 
-So I looked at the code and there were a few issues. First off, the variables were pretty hard to read - like single letter variables `c`, `a`, `b`, `h` which you have to figure out what they mean, and shortened names like `bI`, `bD`, `bR`, `ctr` that aren't really clear either. 
+So I looked at the code and there were a few issues. First off, the variables were pretty hard to read - like single letter variables `c`, `a`, `b`, `h` which you have to figure out what they mean, and shortened names like `bI`, `bD`, `bR`, `ctr` that aren't really clear either.
 
 Also there was a lot of repeated code in those three event listeners. All three of them (increment, decrement, reset) were doing the exact same thing - updating the counter display, changing the title, and switching the background color. Just copied and pasted three times basically.
 
