@@ -19,7 +19,9 @@ function updateCounterDisplay() {
 
   counterDisplay.innerHTML = `${counter}`;
   document.title = `Clicked ${counter}`;
-  document.body.style.backgroundColor = counter % 2 === 1 ? ODD_COLOR : EVEN_COLOR;
+  document.body.style.backgroundColor = counter % 2 === 1
+    ? ODD_COLOR
+    : EVEN_COLOR;
 }
 
 function setup() {
@@ -39,7 +41,9 @@ function setup() {
   const counterDisplay = document.getElementById(COUNTER_DISPLAY_ID);
 
   // Check if any element is missing, then exit the function
-  if (!incrementButton || !decrementButton || !resetButton || !counterDisplay) return;
+  if (!incrementButton || !decrementButton || !resetButton || !counterDisplay) {
+    return;
+  }
 
   // Add click event to the increment button
   incrementButton.addEventListener("click", () => {
